@@ -1,0 +1,163 @@
+html {
+    font-family: "Outfit", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@media only screen and (max-width: 375px){
+body{
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 15px;
+}
+}
+
+@media only screen and (min-width: 376px) and (max-width: 1440px){
+    body{
+        background-color: hsl(217, 54%, 11%);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 25px;
+    }
+
+}
+
+@media only screen and (min-width: 1440px){
+body{
+    background-color: hsl(217, 54%, 11%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 25px;
+}
+}
+
+a {
+    text-decoration: none;
+}
+.container{
+    max-width: 450px;
+    background-color: hsl(216, 50%, 16%);
+    padding: 25px;
+    border-radius: 20px;
+}
+
+.head-img{
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.head-img::after {
+    background-color: hsl(178, 100%, 50%);
+    content: url('./images/icon-view.svg');
+    position: absolute;
+    display: flex;
+    inset: 0;
+    justify-content: center;
+    align-items: center;
+    opacity:0;
+    transition: all 0.20s ease;
+}
+
+.head-img:hover::after {
+    opacity: 0.8;
+}
+
+.head-img img {
+    width: 100%;
+    display: block;
+}
+
+.card-text{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+
+.header-text{
+    margin-bottom: 10px;
+    color: hsl(0, 0%, 100%);
+    font-size: 25px;
+    
+}
+.header-text:hover{
+    color: hsl(178, 100%, 50%);
+    transition: all 0.15s ease-in;
+}
+
+.body-text{
+    color: hsl(215, 51%, 70%);
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.text-price, .countdown {
+    display: flex;
+    justify-content: center;
+}
+
+.wrap-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon {
+    margin-right: 8px;
+}
+
+.text-price{
+    color: hsl(178, 100%, 50%);
+    padding-left: 17px;
+}
+
+.countdown{
+    color: hsl(215, 51%, 70%);
+    padding-right: 17px;
+}
+
+.footer-text{
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.avatar-img{
+    width: 35px;
+    height: 35px;
+    border: 2px solid white;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.creator{
+    color:hsl(215, 51%, 70%);
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.text-price span{
+    font-size: 17px;
+}
+
+.countdown span{
+    font-size: 17px;
+}
+
+.creator a{
+    color: white;
+}
+
+.creator a:hover{
+    color: hsl(178, 100%, 50%);
+}
